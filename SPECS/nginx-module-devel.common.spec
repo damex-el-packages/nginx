@@ -25,7 +25,7 @@ Nginx module development files for nginx.org nginx.
 
 %install
 %{__install} -d %{buildroot}%{_usrsrc} %{buildroot}%{_rpmmacrodir} %{buildroot}%{_fileattrsdir}
-cp -a . %{buildroot}%{_usrsrc}/nginx-%{nginx_version}
+%{__cp} -a %{_builddir}/nginx-%{nginx_version} %{buildroot}%{_usrsrc}/nginx-%{nginx_version}
 cat > %{buildroot}%{_rpmmacrodir}/macros.nginxmods <<'EOF'
 %%_nginx_abiversion %{nginx_version}
 %%_nginx_srcdir %{_usrsrc}/nginx-%{nginx_version}
