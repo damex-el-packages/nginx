@@ -1,0 +1,19 @@
+---
+name: pipeline
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - "**"
+  schedule:
+    - cron: 0 0 * * 0
+
+jobs:
+  pipeline:
+    uses: damex-el-packages/spec-package-builder/.github/workflows/pipeline.yml@production
+    with:
+      gpg_key_id: D22CBF65AE9C3426
+      gpg_public_key: nginx-2036-09-26.asc
+      gpg_public_keyring: nginx-2036-09-26.gpg
+      build_with_published_repository: false
+      publish: ${{ github.ref == 'refs/heads/production' }}
+    secrets: inherit
