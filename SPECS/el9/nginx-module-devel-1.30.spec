@@ -1,0 +1,1 @@
+../nginx-module-devel-1.30.spec
