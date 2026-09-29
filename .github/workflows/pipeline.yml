@@ -14,6 +14,6 @@ jobs:
       gpg_key_id: D22CBF65AE9C3426
       gpg_public_key: nginx-2036-09-26.asc
       gpg_public_keyring: nginx-2036-09-26.gpg
-      build_with_published_repository: false
+      build_with_published_repository: true
       publish: ${{ github.ref == 'refs/heads/production' }}
     secrets: inherit
