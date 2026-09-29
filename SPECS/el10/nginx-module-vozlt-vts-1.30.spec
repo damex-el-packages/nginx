@@ -1,1 +1,0 @@
-../nginx-module-vozlt-vts-1.30.spec
