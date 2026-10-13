@@ -30,3 +30,7 @@ EOF
 %files
 %defattr(-,root,root,-)
 %config %{_sysconfdir}/yum.repos.d/damex-nginx.repo
+
+%changelog
+* %(date -u +"%%a %%b %%d %%Y") Roman Kuzmitskii <el-packages@damex.org> - %{version}-%{release}
+- History: https://github.com/damex-el-packages/nginx/commits/production

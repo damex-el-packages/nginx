@@ -56,3 +56,7 @@ EOF
 %{_usrsrc}/nginx-%{nginx_version}
 %{_rpmmacrodir}/macros.nginxmods
 %{_fileattrsdir}/nginxmods.attr
+
+%changelog
+* %(date -u +"%%a %%b %%d %%Y") Roman Kuzmitskii <el-packages@damex.org> - %{version}-%{release}
+- History: https://github.com/damex-el-packages/nginx/commits/production

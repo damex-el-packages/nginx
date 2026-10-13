@@ -33,3 +33,7 @@ echo 'load_module "%{nginx_moddir}/ngx_http_headers_more_filter_module.so";' > %
 %dir %{nginx_modconfdir}
 %{nginx_moddir}/ngx_http_headers_more_filter_module.so
 %{nginx_modconfdir}/module-headers-more.conf
+
+%changelog
+* %(date -u +"%%a %%b %%d %%Y") Roman Kuzmitskii <el-packages@damex.org> - %{version}-%{release}
+- History: https://github.com/damex-el-packages/nginx/commits/production

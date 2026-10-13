@@ -32,3 +32,7 @@ echo 'load_module "%{nginx_moddir}/ngx_stream_server_traffic_status_module.so";'
 %dir %{nginx_modconfdir}
 %{nginx_moddir}/ngx_stream_server_traffic_status_module.so
 %{nginx_modconfdir}/module-stream-sts.conf
+
+%changelog
+* %(date -u +"%%a %%b %%d %%Y") Roman Kuzmitskii <el-packages@damex.org> - %{version}-%{release}
+- History: https://github.com/damex-el-packages/nginx/commits/production
