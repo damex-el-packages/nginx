@@ -84,6 +84,8 @@ gpgkey = https://yum-repositories.damex.org/nginx/nginx-2036-09-26.asc
 |---------------------------|--------|-------------|-----------------|---------------------------------------------------------|
 | nginx-module-devel        | 1.30.5 | damex-nginx | x86_64, aarch64 | Red Hat Enterprise Linux 9, Red Hat Enterprise Linux 10 |
 | nginx-module-headers-more | 1.30.5 | damex-nginx | x86_64, aarch64 | Red Hat Enterprise Linux 9, Red Hat Enterprise Linux 10 |
+| nginx-module-stream-sts   | 1.30.5 | damex-nginx | x86_64, aarch64 | Red Hat Enterprise Linux 9, Red Hat Enterprise Linux 10 |
+| nginx-module-sts          | 1.30.5 | damex-nginx | x86_64, aarch64 | Red Hat Enterprise Linux 9, Red Hat Enterprise Linux 10 |
 | nginx-module-vts          | 1.30.5 | damex-nginx | x86_64, aarch64 | Red Hat Enterprise Linux 9, Red Hat Enterprise Linux 10 |
 
 Modules require `nginx` from `nginx.org` repository.
