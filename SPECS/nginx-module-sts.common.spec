@@ -1,6 +1,5 @@
 %define debug_package %{nil}
 %global _build_id_links none
-%undefine source_date_epoch_from_changelog
 %global nginx_module_sts_version 0.1.1
 
 Name: nginx-module-sts
