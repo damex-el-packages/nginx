@@ -1,5 +1,6 @@
 /BUILD/
 /BUILDROOT/
 /RPMS/
-/SOURCES/
+/SOURCES/*
+!/SOURCES/*.keyring
 /SRPMS/
