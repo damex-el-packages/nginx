@@ -26,7 +26,7 @@ Nginx module development files for nginx.org nginx.
 %install
 %{__install} -d %{buildroot}%{_usrsrc} %{buildroot}%{_rpmmacrodir} %{buildroot}%{_fileattrsdir}
 %{__cp} -a %{_builddir}/nginx-%{nginx_version} %{buildroot}%{_usrsrc}/nginx-%{nginx_version}
-cat > %{buildroot}%{_rpmmacrodir}/macros.nginxmods <<'EOF'
+%{__cat} > %{buildroot}%{_rpmmacrodir}/macros.nginxmods <<'EOF'
 %%_nginx_abiversion %{nginx_version}
 %%_nginx_srcdir %{_usrsrc}/nginx-%{nginx_version}
 %%_nginx_buildsrcdir nginx-src
@@ -46,7 +46,7 @@ cat > %{buildroot}%{_rpmmacrodir}/macros.nginxmods <<'EOF'
 
 %%nginx_modbuild %%{__make} -C "%%{_nginx_buildsrcdir}" %%{_make_output_sync} %%{?_smp_mflags} %%{_make_verbose} modules
 EOF
-cat > %{buildroot}%{_fileattrsdir}/nginxmods.attr <<'EOF'
+%{__cat} > %{buildroot}%{_fileattrsdir}/nginxmods.attr <<'EOF'
 %%__nginxmods_requires() nginx-r%%{_nginx_abiversion}
 %%__nginxmods_path ^%%{_prefix}/lib(64)?/nginx/modules/.*\\.so$
 EOF

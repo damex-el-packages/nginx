@@ -18,7 +18,7 @@ URL: https://yum-repositories.damex.org
 
 %install
 %{__install} -d %{buildroot}%{_sysconfdir}/yum.repos.d
-cat <<EOF > %{buildroot}%{_sysconfdir}/yum.repos.d/damex-nginx.repo
+%{__cat} <<EOF > %{buildroot}%{_sysconfdir}/yum.repos.d/damex-nginx.repo
 [damex-nginx]
 name = damex-nginx
 baseurl = https://yum-repositories.damex.org/nginx/%{disttype}/%{distnum}/%{_arch}
