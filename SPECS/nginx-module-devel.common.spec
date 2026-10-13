@@ -7,6 +7,9 @@ Summary: nginx module development files
 License: BSD-2-Clause
 URL: https://nginx.org
 Source0: https://nginx.org/download/nginx-%{nginx_version}.tar.gz
+Source1: https://nginx.org/download/nginx-%{nginx_version}.tar.gz.asc
+Source2: %{name}.keyring
+BuildRequires: gnupg2
 Requires: gcc
 Requires: make
 Requires: openssl-devel
@@ -18,6 +21,7 @@ Conflicts: nginx-mod-devel
 Nginx module development files for nginx.org nginx.
 
 %prep
+%{gpgverify -k2 -s1 -d0}
 %autosetup -n nginx-%{nginx_version}
 
 %build
