@@ -1,1 +1,0 @@
-../nginx-module-sts-1.30.spec

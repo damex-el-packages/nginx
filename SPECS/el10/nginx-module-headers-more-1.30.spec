@@ -1,1 +1,0 @@
-../nginx-module-headers-more-1.30.spec
