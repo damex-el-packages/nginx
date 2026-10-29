@@ -1,0 +1,1 @@
+../nginx-module-sts-1.31.8.spec

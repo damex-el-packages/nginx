@@ -1,0 +1,1 @@
+../nginx-module-vts-1.31.8.spec
