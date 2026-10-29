@@ -1,6 +1,6 @@
 %define debug_package %{nil}
 %global _build_id_links none
-%global nginx_module_headers_more_version 0.40
+%global nginx_module_headers_more_version 0.41
 
 Name: nginx-module-headers-more
 Version: %{nginx_version}+%{nginx_module_headers_more_version}
